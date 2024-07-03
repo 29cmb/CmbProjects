@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <script src="Project.js"></script>
+        <link rel="stylesheet" href="/styles/index.css">
+    </head>
+    <body>
+        <div id="topbar"> 
+            <button><a href="/me.html">About me</a></button>
+            <button><a href="/">Roblox</a></button>
+            <button><a href="/other.html">Other</a></button>
+        </div>
+
+        <div id="container"></div>
+        <script>
+            let project1 = new Project("assets/images/love.png", "Rhythm Game", "I made a rhythm game in LOVE2D, a lua-based programming language, that includes a fully-featured level editor and level loading. Made for <a href='https://hackclub.com/arcade' style='color:blue;'>hackclub 2024</a>", "https://github.com/29cmb/Love2dRhythmGame")
+            project1.display();
+        </script>
+    </body>
+</html>

@@ -2,6 +2,7 @@
     <head>
         <script src="assets/js/Project.js"></script>
         <link rel="stylesheet" href="assets/styles/index.css">
+        <script src="assets/js/packages/particles.min.js"></script>
     </head>
     <body>
         <div id="topbar"> 
@@ -9,8 +10,11 @@
             <button><a href="/">Roblox</a></button>
             <button><a href="/other.html">Other</a></button>
         </div>
-
-        <div id="container"></div>
+        
+        <div id="container">
+            
+        </div>
+        <div id="particles"></div>
         <script>
             let project1 = new Project("assets/images/love.png", "Rhythm Game", "I made a rhythm game in LOVE2D, a lua-based programming language, that includes a fully-featured level editor and level loading. Made for <a href='https://hackclub.com/arcade' style='color:blue;'>hackclub 2024</a>", "https://github.com/29cmb/Love2dRhythmGame")
             project1.display();
@@ -18,4 +22,12 @@
             project2.display();
         </script>
     </body>
+
+    <script>
+        setTimeout(() => {
+            particlesJS.load('particles', '/assets/config/p.json', function() {
+                console.log('particles.js config loaded');
+            });
+        }, 1200)
+    </script>
 </html>

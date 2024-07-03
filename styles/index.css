@@ -26,10 +26,19 @@ body {
 
 .project button {
     border-radius: 5px;
-    background-color: #333333;
+    background-color: #07d400;
+    border-color: #009b0d;
+    border-style: solid;
     color: #FFFF;
     padding: 10px 20px;
     font-size: 18px;
+    transition: all ease .5s;
+}
+
+.project button:hover {
+    border-radius: 10px;
+    font-size: 20px;
+    transition: all ease .5s;
 }
 
 .project p {
